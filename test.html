@@ -1,0 +1,79 @@
+﻿<html lang="ja">
+
+<head>
+    <meta charset="utf-8" />
+    <!-- <link href="login.css" rel="stylesheet" type="text/css"> -->
+    <title>題名</title>
+    <style>
+    </style>
+    <script type="text/javascript">
+    </script>
+</head>
+
+<body>
+    <div class="con">
+
+            <header>
+                <h1>
+                   　題名
+                </h1>
+            </header>
+            <form style="position:absolute; left:1145px; top:35px">
+                <button type="button" style="WIDTH: 50px; HEIGHT: 50px" class="menu">
+                    <span class="span_top"></span>
+                    <span class="span_center"></span>
+                    <span class="span_botm"></span>
+                </button>
+            </form>
+            <form style="position:absolute; right:350px; top:58px; ">
+                <button type="button" onclick="location.href='#'" style="WIDTH: 100px; HEIGHT: 35px" class="top">Top or Home</button>
+                <button type="button" onclick="location.href='#'" style="WIDTH: 100px; HEIGHT: 35px" class="kensaku">ジャンル</button>
+                <button type="button" onclick="location.href='#'" style="WIDTH: 100px; HEIGHT: 35px" class="mypage">クイズ作成</button>
+                <button type="button" onclick="location.href='#'"
+                        style="WIDTH: 100px; HEIGHT: 35px" class="faq">
+                    HELP
+                </button>
+            </form>
+
+            <form style="position:absolute; left:430px; top:150px">
+                <h1>検索やログインが出来ます<br />　　（DBがあれば）</h1>
+            </form>
+
+            <form action="login.php" method="post">
+
+                <table style="position:absolute;left:300px; top:298px">
+                    <tr>
+                        <th style="font-size : 30px;">DBと<br />照合するデータ１</th>
+                        <td width="80%">
+                            <input type="text" size="50" maxlength="50" name="member_mailaddress" value="" style="ime-mode: disabled;" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <th style="font-size : 30px;" class="nobottom">DBと<br />照合するデータ２</th>
+                        <td width="80%" class="nobottom">
+                            <input type="password" size="50" maxlength="50" name="member_pass" value="" style="ime-mode: disabled;" />
+                        </td>
+                    </tr>
+                </table>
+                <p class="center" style="position:absolute;left:420px;top:475px">
+                    <button type="submit" class="login" onclick="#" style="width: 150px;HEIGHT:55px">ログイン</button>
+                </p>
+            </form>
+            <form style="position:absolute; left:670px; top:490px">
+                <button type="button" class="sinki" onclick="#" style="WIDTH: 150px; HEIGHT: 55px">
+                    新規作成
+                </button>
+            </form>
+            <form style="position:absolute; left:530px; top:570px">
+                <a href='http://wiz.developluna.jp/~j2020tmG/sources/passN.php'>パスワードを忘れた場合</a>
+            </form>
+    </div>
+    <form style="position:absolute; left:425px; top:715px">
+        <a href="#" class="link1">FAQ</a>
+        <a href="#" class="link2">問い合わせ</a>
+        <a href="#" class="link3">プライバシーポリシー</a>
+        <a href="#" class="link4">利用規約</a>
+    </form>
+</body>
+
+</html>
