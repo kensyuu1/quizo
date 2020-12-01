@@ -1,0 +1,82 @@
+<html　lang="ja">
+    <head>
+        <meta charset="utf-8" />
+        <title>
+            クイズ作成
+        </title>
+        <script type="text/javascript">
+        </script>
+    </head>
+    <body>
+        <div class="con">
+            <header>
+            </header>
+            <h1>
+                　クイズ作成
+            </h1>
+
+            <label class="menu" for="cp_navimenuid">
+    
+    
+                <div class="menubar">
+                    <span class="block"></span>
+                    <span class="block"></span>
+                    <span class="block"></span>
+                </div>
+    
+    
+                <ul>
+                    <li><a id="home" href="#">トップ</a></li>
+                    <li><a id="search" href="#">問題作成</a></li>
+                    <li><a id="home" href="#">help</a></li>
+                </ul>
+    
+    
+            </label>
+
+            <p>早押し問題</p>
+
+            <tr>
+                <th>問題内容</th>
+                <td width="70%"><textarea name="" cols="70" rows="10"></textarea>
+                </td>
+            </tr>
+            <!-- 画像１　-->
+            <tr>
+                <td width="70%">
+                <!--{if $smarty.post.mypage_image_1 != ''}
+                <img src="" width="200px" /><br />
+                {/if}-->
+                <input type="hidden" name="image_1" value="" />
+                <input type="file"  name="image_1" >
+                </td>
+                </tr>
+            <tr>
+                <th>正解の選択肢
+                </th>
+                <td width="70%"><textarea name="" cols="10" rows="2"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <th>間違いの選択肢</th>
+                <td width="70%"><textarea name="" cols="10" rows="2"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <th>間違いの選択肢</th>
+                <td width="70%"><textarea name="" cols="10" rows="2"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <th>解説（任意）</th>
+                <td width="70%"><textarea name="" cols="70" rows="10"></textarea>
+                </td>
+            </tr>
+
+            <input type="submit" value="作成" onclick=""/>
+
+        </div>
+
+    </body>
+
+</html>
