@@ -19,7 +19,7 @@ shuffle($question); //配列の中身をシャッフル
 <body>
  
 <h2><?php echo $title ?></h2>
-<form method="POST" action="result.php">
+<form method="POST" action="result.html">
    <?php foreach($question as $value){ ?>
     <input type="radio" name="question" value="<?php echo $value; ?>" /> <?php echo $value; ?><br>
    <?php } ?>
