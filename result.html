@@ -1,3 +1,20 @@
+<?php
+
+//answer.php
+ 
+$question = $_POST['question']; //ラジオボタンの内容を受け取る
+$answer = $_POST['answer'];   //hiddenで送られた正解を受け取る
+
+//結果の判定
+if($question == $answer){
+	$result = "正解！";
+}else{
+	$result = "不正解･･･";
+}
+ 
+?>
+
+
 <html　lang="ja">
     <head>
         <meta charset="utf-8" />
@@ -12,7 +29,7 @@
             <header>
             </header>
             <h1>
-                　間違い探し結果
+                　結果
             </h1>
 
             <label class="menu" for="cp_navimenuid">
@@ -37,7 +54,7 @@
             <tr>
                 <th>結果</th>
                 <td width="70%">
-                    <strong></strong>
+                    <?php echo $result ?>
                 </td>
             </tr>
             <tr>
