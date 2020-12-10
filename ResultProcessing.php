@@ -4,6 +4,7 @@
 <title>クイズ結果出力（仮）</title>
 </head>
 <body>
+    
 <?php
 $seikaisuu = rand(0, 10);
 
