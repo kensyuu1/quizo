@@ -25,7 +25,7 @@
     border: solid 3px #000000;
     position:absolute; top:150px; left:250px">
         <?php
-$seikaisuu = rand(0, 10);
+$seikaisuu = rand(0, 10); //クイズの処理が完成したらここをクイズに正解した数に変更する
 
 echo "あなたの正解数は";
 echo "$seikaisuu";
@@ -42,7 +42,7 @@ echo "/10です";
     font-weight: bold;
     border: solid 3px #000000;
     position:absolute; top:250px; left:170px">
-    <?php
+    <?php //終了後のメッセージや条件を変更する場合はここを変更する
         echo "おすすめ情報";
         if ($seikaisuu < 3){
             echo "　　　もう少し頑張りましょう";
